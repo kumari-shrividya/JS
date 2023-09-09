@@ -1,0 +1,40 @@
+<html>
+    <head>
+        
+        <style> 
+            body{
+                background-color:blueviolet
+            }
+        </style>
+    </head>
+<body>
+<h2>My First javascript </h2>
+
+
+<button type="button" onClick="show()">Click me to display date and Time</button>
+<button type="button" onClick="hide()">Click me to hide</button><br>
+<p id="demo" style="color:red">hello</p>
+
+<script type="text/javascript">
+   
+    function show(){
+        //window.alert(Date())
+        document.getElementById('demo').style.display="block" //display="inline"
+        document.getElementById("demo").innerText=Date();
+        document.getElementById("demo").style.fontSize="35px"
+       // var a=10 console.log(a)
+        //document.write(Date())
+//const ele= document.getElementById("demo")
+   //console.log(ele)
+  //ele.innerText=Date()
+  //ele.innerText=Date()
+ // ele.style.color="red"
+    //console.log(Date())
+}
+
+function hide(){
+    document.getElementById('demo').style.display="none" 
+}
+</script>
+ </body>
+</html>

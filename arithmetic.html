@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+   <h3>Basic Calculator</h3>
+    
+    <p>Input1: <input type="text" id="input1" autofocus size="5" ></input></p>
+
+    <p>Input2: <input type="text" id="input2" size="5" ></input></p><br>    
+
+    <button type="button" id="add"style= "font-size: medium;" onClick="myFunction('add')">+</button>
+
+    <button  id="sub" onClick="myFunction('sub')"  style="font-size: medium;">-</button>
+
+    <button id="mult" style="font-size: medium;" onclick="myFunction('mult')">*</button>
+
+    <button id="div" style="font-size: medium;" onClick="myFunction('div')">/</button>
+
+    <p>Answer : <input type="text" readonly id="output" size="5" > </input></p><br>
+    </div> 
+   
+<script type="text/javascript">
+  function myFunction(id){
+    
+  var num1=document.getElementById("input1").value
+  var num2=document.getElementById("input2").value
+   var result;
+    
+    if(id=='add'){
+    //document.getElementById("answer").value=result;
+        result=Number(num1)+Number(num2)
+    }
+    else if(id=='sub'){
+        result=Number(num1)-Number(num2)
+    }
+    else if(id=='mult'){
+        result=Number(num1)*Number(num2)
+    }
+    else if(id=='div'){
+        result=Number(num1)/Number(num2)
+    }
+
+    document.getElementById("output").value=result;
+    }
+   </script>
+</body>
+</html>
